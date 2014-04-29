@@ -17,10 +17,6 @@ public class Referent{
         workshopListe.add(workshop);
     }
 
-    public String showWorkshopListe(){
-        return "Workshopangebot von " + name + ": " + workshopListe;
-    }
-
     public boolean anmelden(){
         if(istAngemeldet==false){
             istAngemeldet = true;
@@ -29,6 +25,6 @@ public class Referent{
     }
 
     public String toString(){
-        return "Name: " + name + "; E-Mail: " + email + "; Firma: " + firma + "\n";
+        return "Name: " + name + "; E-Mail: " + email + "; Firma: " + firma + "\nWorkshopangebot von " + name + ": " + workshopListe;
     }
 }
